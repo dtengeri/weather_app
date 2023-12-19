@@ -1,0 +1,181 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:9125949422073348728",
+      "lastPropertyId": "5:5236280699431084206",
+      "name": "ObjectBoxLocation",
+      "properties": [
+        {
+          "id": "1:7398228767862623833",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:6690278694582810254",
+          "name": "city",
+          "type": 9
+        },
+        {
+          "id": "3:5632263878752466236",
+          "name": "country",
+          "type": 9
+        },
+        {
+          "id": "4:631243391326687542",
+          "name": "longitude",
+          "type": 8
+        },
+        {
+          "id": "5:5236280699431084206",
+          "name": "latitude",
+          "type": 8
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:6212453888631272785",
+      "lastPropertyId": "2:726139462921129666",
+      "name": "ObjectBoxAppSettings",
+      "properties": [
+        {
+          "id": "1:4043919296113677854",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:726139462921129666",
+          "name": "dbTemneperatureUnit",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:1039612676162057545",
+      "lastPropertyId": "9:8832047683115825392",
+      "name": "ObjectBoxWeatherForecast",
+      "properties": [
+        {
+          "id": "1:5972013789064078143",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:1886362165129983394",
+          "name": "locationCity",
+          "type": 9,
+          "flags": 2048,
+          "indexId": "2:4815851846597109858"
+        },
+        {
+          "id": "3:4014428803183240231",
+          "name": "locationCountry",
+          "type": 9,
+          "flags": 2048,
+          "indexId": "3:6091263129775128174"
+        },
+        {
+          "id": "4:1425296046277089776",
+          "name": "locationLatitude",
+          "type": 8
+        },
+        {
+          "id": "5:2047689844826122064",
+          "name": "locationLongitude",
+          "type": 8
+        },
+        {
+          "id": "6:5727823546004472709",
+          "name": "requestedAt",
+          "type": 10
+        },
+        {
+          "id": "7:8056422148052862328",
+          "name": "currentTemperature",
+          "type": 8
+        },
+        {
+          "id": "8:3522748079909155030",
+          "name": "currentHumidity",
+          "type": 6
+        },
+        {
+          "id": "9:8832047683115825392",
+          "name": "currentWeatherCode",
+          "type": 6
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "4:8106077178139549717",
+      "lastPropertyId": "8:8661005664592360444",
+      "name": "ObjectBoxDailyWeatherCondition",
+      "properties": [
+        {
+          "id": "1:5016881945616182658",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:3287904746127091141",
+          "name": "weatherForecastId",
+          "type": 11,
+          "flags": 520,
+          "indexId": "1:1378844084698189371",
+          "relationTarget": "ObjectBoxWeatherForecast"
+        },
+        {
+          "id": "3:7933655648428254790",
+          "name": "date",
+          "type": 10
+        },
+        {
+          "id": "4:8717493502034414371",
+          "name": "minimumTemperature",
+          "type": 8
+        },
+        {
+          "id": "5:2577105487913570131",
+          "name": "maximumTemperature",
+          "type": 8
+        },
+        {
+          "id": "6:6337432173757324790",
+          "name": "precipitation",
+          "type": 8
+        },
+        {
+          "id": "7:5184799208535818042",
+          "name": "precipitationProbability",
+          "type": 6
+        },
+        {
+          "id": "8:8661005664592360444",
+          "name": "weatherCode",
+          "type": 6
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "4:8106077178139549717",
+  "lastIndexId": "3:6091263129775128174",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
